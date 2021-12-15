@@ -8,7 +8,7 @@ namespace TrainingManagementSystem.Trainings
         public const int ARRAY_SIZE = 10;
         public int Index { get; private set; } = 0;
 
-        public string Description { get; set; } = string.Empty;
+        public string Description { get; set; }
 
         public Training(string description)
         {

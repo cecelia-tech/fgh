@@ -5,7 +5,7 @@ namespace TrainingManagementSystem.Lectures
 {
     public class Lecture : Training
     {
-        public string Topic { get; set; } = string.Empty;
+        public string Topic { get; set; }
 
         public Lecture(string description, string topic) : base(description)
         {

@@ -52,6 +52,10 @@ namespace TrainingManagementSystem
 
             Console.WriteLine("training3 IsPractical");
             Console.WriteLine(training3.IsPractical());
+
+            Training training4 = new Training(null);
+
+            Console.WriteLine(training4.Description);
         }
     }
 }
