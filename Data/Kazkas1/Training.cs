@@ -6,7 +6,7 @@ namespace TrainingManagementSystem.Trainings
     public class Training
     {
         public const int ARRAY_SIZE = 10;
-        private int index = 0;
+        public int Index { get; private set; } = 0;
 
         public string Description { get; set; } = string.Empty;
 
@@ -15,19 +15,19 @@ namespace TrainingManagementSystem.Trainings
             Description = description;
         }
 
-        Training[] allTrainings = new Training[ARRAY_SIZE];
+        public Training[] lecturesAndPracticalLessons = new Training[ARRAY_SIZE];
 
         public void Add(Training lesson)
         {
-            allTrainings[index] = lesson;
-            index++;
+            lecturesAndPracticalLessons[Index] = lesson;
+            Index++;
         }
 
         public bool IsPractical()
         {
-            for (int i = 0; i <= index; i++)
+            for (int i = 0; i < Index; i++)
             {
-                if (!(allTrainings[i] is PracticalLesson))
+                if (!(lecturesAndPracticalLessons[i] is PracticalLesson))
                 {
                     return false;
                 }
@@ -35,10 +35,13 @@ namespace TrainingManagementSystem.Trainings
             return true;
         }
 
-        public Training Clone(Training trainingToClone)
+        public Training Clone()
         {
-            Training clonedTraining = new Training(Description);
-            clonedTraining.allTrainings = this.allTrainings;
+            Training clonedTraining = (Training) this.MemberwiseClone();
+            clonedTraining.lecturesAndPracticalLessons = new Training[ARRAY_SIZE];
+            Array.Copy(this.lecturesAndPracticalLessons, clonedTraining.lecturesAndPracticalLessons,Index);
+
+            clonedTraining.Index = this.Index;
 
             return clonedTraining;
         }
