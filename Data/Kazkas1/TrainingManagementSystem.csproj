@@ -6,19 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Trainings\" />
-    <None Remove="Lectures\" />
-    <None Remove="PracticalLessons\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Trainings\" />
-    <Folder Include="Lectures\" />
-    <Folder Include="PracticalLessons\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Trainings\Training.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
     <Compile Update="Training.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
