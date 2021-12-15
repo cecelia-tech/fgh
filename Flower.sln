@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B7522DDA-45E5-459C-B109-BF9A2C20FE68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kazkas1", "Data\Kazkas1\Kazkas1.csproj", "{DD6CE05F-0D80-4A43-A988-F3E979708E32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kazkas2", "Data\Kazkas2\Kazkas2.csproj", "{CF08755D-C7B0-49D6-BCC5-599E2E1129F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD6CE05F-0D80-4A43-A988-F3E979708E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD6CE05F-0D80-4A43-A988-F3E979708E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD6CE05F-0D80-4A43-A988-F3E979708E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD6CE05F-0D80-4A43-A988-F3E979708E32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF08755D-C7B0-49D6-BCC5-599E2E1129F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF08755D-C7B0-49D6-BCC5-599E2E1129F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF08755D-C7B0-49D6-BCC5-599E2E1129F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF08755D-C7B0-49D6-BCC5-599E2E1129F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {767D37A4-D03E-4A7A-AFEF-845ABA46A5B1}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD6CE05F-0D80-4A43-A988-F3E979708E32} = {B7522DDA-45E5-459C-B109-BF9A2C20FE68}
+		{CF08755D-C7B0-49D6-BCC5-599E2E1129F3} = {B7522DDA-45E5-459C-B109-BF9A2C20FE68}
+	EndGlobalSection
+EndGlobal
