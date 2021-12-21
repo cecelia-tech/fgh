@@ -1,5 +1,4 @@
-﻿using System;
-using TrainingManagementSystem.Trainings;
+﻿using TrainingManagementSystem.Trainings;
 
 namespace TrainingManagementSystem.PracticalLessons
 {

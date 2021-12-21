@@ -16,46 +16,57 @@ namespace TrainingManagementSystem
             training1.Add(lecture1);
             training1.Add(practicalLesson1);
 
+            Console.WriteLine("Inside of the array of training1");
             for (int i = 0; i < training1.Index; i++)
             {
                 Console.WriteLine(training1.lecturesAndPracticalLessons[i].Description);
             }
+            Console.WriteLine("-------------");
 
+            Console.WriteLine("Is training1 practical?");
             Console.WriteLine(training1.IsPractical());
+            Console.WriteLine("-------------");
 
             Training training2 = new Training("training 2");
 
             training2.Add(practicalLesson1);
 
-            Console.WriteLine(training2.IsPractical());
-
+            Console.WriteLine("Inside of the array of training2");
             for (int i = 0; i < training2.Index; i++)
             {
                 Console.WriteLine(training2.lecturesAndPracticalLessons[i].Description);
             }
+            Console.WriteLine("-------------");
 
-            Training training3 = training1.Clone();
+            Console.WriteLine("Is training2 practical?");
+            Console.WriteLine(training2.IsPractical());
+            Console.WriteLine("-------------");
 
-            training3.lecturesAndPracticalLessons[0] = practicalLesson1;
+            Training training3 = training2.Clone();
+            training3.Add(practicalLesson1);
+            training3.Add(lecture1);
+            training3.Description = "New description for training3";
 
-            Console.WriteLine("training 3");
+            Console.WriteLine("Training3 cloned from training2, 2 elements added to the array");
             for (int i = 0; i < training3.Index; i++)
             {
                 Console.WriteLine(training3.lecturesAndPracticalLessons[i].Description);
             }
 
-            Console.WriteLine("training 1");
-            for (int i = 0; i < training1.Index; i++)
+            Console.WriteLine("---- Checking if training2 has changed ---------");
+            for (int i = 0; i < training2.Index; i++)
             {
-                Console.WriteLine(training1.lecturesAndPracticalLessons[i].Description);
+                Console.WriteLine(training2.lecturesAndPracticalLessons[i].Description);
             }
+            Console.WriteLine("-------------");
 
-            Console.WriteLine("training3 IsPractical");
-            Console.WriteLine(training3.IsPractical());
+            Console.WriteLine("Description for training2");
+            Console.WriteLine(training2.Description);
+            Console.WriteLine("-------------");
 
-            Training training4 = new Training(null);
-
-            Console.WriteLine(training4.Description);
+            Console.WriteLine("Description for training3");
+            Console.WriteLine(training3.Description);
+            Console.WriteLine("-------------");
         }
     }
 }
